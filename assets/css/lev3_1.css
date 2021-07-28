@@ -23,20 +23,6 @@ header > button {
     cursor: pointer;
 }
 
-main {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-main > section {
-    border: 1px solid #000;
-    width: 600px;
-    height: 600px;
-    display: flex;
-}
-
 main > section > div {
     position: absolute;
     width: 100px;
@@ -71,17 +57,17 @@ main > section > div:nth-of-type(4) {
     }
 
     25% {
-        transform: translateX(500px) translateY(0px);
+        transform: translateX(calc(100vw - 100px)) translateY(0px);
         background: yellow;
     }
 
     50% {
-        transform: translateX(500px) translateY(500px);
+        transform: translateX(calc(100vw - 100px)) translateY(calc(100vh - 100px));
         background: green;
     }
 
     75% {
-        transform: translateX(0px) translateY(500px);
+        transform: translateX(0px) translateY(calc(100vh - 100px));
         background: blue;
     }
 
