@@ -44,8 +44,10 @@ main > section > div {
     animation-duration: 1s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-
     background: red;
+}
+
+main > section > div:not(:last-of-type) {
     margin-right: 30px;
 }
 
