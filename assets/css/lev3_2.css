@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+}
+
+h1, a {
+    margin: 0;
+    text-decoration: none;
+    color: #000;
+}
+
+header {
+    position: absolute;
+   
+}
+
+header > button {
+    height: 5vh;
+    width: 10vh;
+    background: #fff;
+    border: 1px solid #000;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+main {
+    background: #000;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main > section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main > section > div {
+    width: 25px;
+    height: 25px;
+    animation-name: snake;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    background: red;
+    margin-right: 30px;
+}
+
+@keyframes snake {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+
+    25% {
+        transform: translateY(20px);
+    }
+
+    50% {
+        transform: translateY(40px);
+    }
+}
+
+main > section > div:nth-of-type(1) {
+    animation-delay: 0ms;
+    background: greenyellow;
+}
+
+main > section > div:nth-of-type(2) {
+    animation-delay: 125ms;
+    background: blue;
+}
+
+main > section > div:nth-of-type(3) {
+    animation-delay: 250ms;
+    background: yellow;
+}
+
+main > section > div:nth-of-type(4) {
+    animation-delay: 375ms;
+    background: red;
+}
+
+main > section > div:nth-of-type(5) {
+    animation-delay: 500ms;
+    background: violet;
+}
+
+
+

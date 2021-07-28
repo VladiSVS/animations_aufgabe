@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+}
+
+h1, a {
+    margin: 0;
+    text-decoration: none;
+    color: #000;
+}
+
+header {
+    position: absolute;
+   
+}
+
+header > button {
+    height: 5vh;
+    width: 10vh;
+    background: #fff;
+    border: 1px solid #000;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main > section {
+    border: 1px solid #000;
+    width: 600px;
+    height: 600px;
+    display: flex;
+}
+
+main > section > div {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes move {
+    
+    0%, 100% {
+        transform: translateX(0px) translateY(0px);
+        background: red;
+    }
+
+    25% {
+        transform: translateX(500px) translateY(0px);
+        background: yellow;
+    }
+
+    50% {
+        transform: translateX(500px) translateY(500px);
+        background: green;
+    }
+
+    75% {
+        transform: translateX(0px) translateY(500px);
+        background: blue;
+    }
+
+}
